@@ -1,14 +1,16 @@
-<% provide(:title, "Home") %>
+<% provide(:title, "Главная") %>
 
 <div class="center jumbotron">
   <h1>Добро пожаловать в Sample App</h1>
   <!--<h1>Welcome to the Sample App</h1>-->
 
   <h2>
-    Это домашняя страница образца приложения <a href="http://rubyonrails.org/">Ruby on Rails</a>.
+    Это домашняя страница приложения <a href="http://rubyonrails.org/">Ruby on Rails</a>.
   </h2>
   
-  <%= link_to "Зарегистрироваться сейчас", '#', class: "btn btn-lg btn-primary" %>
+  <%= link_to "Зарегистрироваться сейчас", singup_path, class: "btn btn-lg btn-primary" %>
 </div>
+      
+  <%= render 'layouts/row' %>
 
-<%= link_to image_tag('rails.png', alt: "Rails logo"), 'http://rubyonrails.org' %>
+<!--<%= link_to image_tag('rails.png', alt: "Rails logo"), 'http://rubyonrails.org' %>-->
